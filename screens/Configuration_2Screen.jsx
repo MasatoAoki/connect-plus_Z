@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import AppNavigator from './navigation/AppNavigator';
+import Configuration_2Item from '../components/Configuration_2Item';
 
-export default function App() {
+const Configuration_2Screen =() => {
   return (
     <View style={styles.container}>
-      <AppNavigator/>
+      <Configuration_2Item/>
     </View>
   );
 }
@@ -20,5 +20,5 @@ const styles = StyleSheet.create({
   },
 });
 
-//develop
-//M_01
+export default Configuration_2Screen;
+

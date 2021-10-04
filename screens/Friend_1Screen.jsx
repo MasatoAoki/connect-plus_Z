@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import AppNavigator from './navigation/AppNavigator';
+import Friend_1Item from '../components/Friend_1Item';
 
-export default function App() {
+const Friend_1Screen =() => {
   return (
     <View style={styles.container}>
-      <AppNavigator/>
+      <Friend_1Item/>
     </View>
   );
 }
@@ -20,5 +20,5 @@ const styles = StyleSheet.create({
   },
 });
 
-//develop
-//M_01
+export default Friend_1Screen;
+
