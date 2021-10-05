@@ -3,10 +3,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Send_2Item from '../components/Send_2Item';
 
-const Send_2Screen =() => {
+const Send_2Screen =({navigation}) => {
   return (
     <View style={styles.container}>
-      <Send_2Item/>
+      <Send_2Item
+      onPress={() => navigation.navigate("送信内容を入力して下さい")}
+      />
     </View>
   );
 }

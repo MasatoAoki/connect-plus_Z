@@ -3,10 +3,14 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Friend_1Item from '../components/Friend_1Item';
 
-const Friend_1Screen =() => {
+const Friend_1Screen =({navigation}) => {
+  
   return (
     <View style={styles.container}>
-      <Friend_1Item/>
+      <Friend_1Item
+        onPress={() => navigation.navigate("友達設定")}
+      
+      />
     </View>
   );
 }
