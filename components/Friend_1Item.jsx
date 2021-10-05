@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, SafeAreaView, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, FlatList, SafeAreaView, Button, Alert, TouchableOpacity } from 'react-native';
 
 
-const Friend_1Item = () => {
+const Friend_1Item = ({onPress}) => {
     return (
-        <View style={styles.TitleContainer}>
+        <TouchableOpacity style={styles.TitleContainer} onPress={onPress}>
             <Text style={styles.Titletxt}>Friend_1TXT</Text>
-        </View>
+        </TouchableOpacity>
 
     )
 }

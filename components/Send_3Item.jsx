@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, SafeAreaView, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, FlatList, SafeAreaView, Button, Alert,TouchableOpacity } from 'react-native';
 
 
-const Send_3Item = () => {
+const Send_3Item = ({onPress}) => {
     return (
-        <View style={styles.TitleContainer}>
+        <TouchableOpacity style={styles.TitleContainer} onPress={onPress}>
             <Text style={styles.Titletxt}>Send_3TXT</Text>
-        </View>
+        </TouchableOpacity>
 
     )
 }
