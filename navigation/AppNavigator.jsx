@@ -10,14 +10,24 @@ import Send_4Screen from '../screens/Send_4Screen';
 import Receive_1Screen from '../screens/Receive_1Screen'
 import Configuration_1Screen from '../screens/Configuration_1Screen'
 import Configuration_2Screen from '../screens/Configuration_2Screen'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
+const Stack = createNativeStackNavigator();
 
 export default AppNavigator = () => {
     return (
-        <View style={styles.container}>
-            <Configuration_2Screen/>
-        </View>
+      <NavigationContainer>
+
+          <Stack.Navigator>
+            <Stack.Screen 
+            name="Friend_1Screen" 
+            component={Friend_1Screen} 
+            />
+            
+          </Stack.Navigator>
+
+      </NavigationContainer>
     );
   }
 
